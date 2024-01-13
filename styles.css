@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Kanit:wght@600&family=Lato:ital,wght@1,300&family=Montserrat&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=DM+Serif+Display&family=Kanit:wght@600&family=Lato:ital,wght@1,300&family=Lora:wght@700&family=Montserrat&family=Raleway:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width:100%;
+    height: 100vh;
+    background-image: url(./images/image-header.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.top{
+    top: 0px;
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: -1rem;
+    font-family: "Kanit";
+}
+
+.logo{
+    color:white;
+    margin-left: 10px;
+}
+
+
+.logo>h1{
+    text-align: center;
+}
+   
+
+nav>ul{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav{
+    list-style: none;
+    margin: 1.5rem;
+    margin-left: 1rem;
+    /* padding-right: 2rem;*/
+    padding: 1rem;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+.nav:hover{
+    background-color: white;
+    color:black;
+    border-radius: 2rem;
+    
+}
+
+.nav>ul>li>a{
+    text-decoration: none;
+    
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 10rem;
+    justify-content: center;
+}
+
+.hero>img{
+    width: 100%;
+    background-size: cover;
+}
+
+.hero>h1{
+    position: absolute;
+    color: white;
+    letter-spacing: 20px;
+    margin-bottom: 100px;
+    font-size: 4rem;
+    font-family: "Kanit";
+}
+
+.section1{
+    margin-top: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.grid{
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.grid>img{
+    width: 100%;
+    height: 100%;
+    background-size:cover ;
+}
+
+.hov{
+    transition: all 500ms ease;
+}
+
+.hov:hover{
+    transform: scale(1.2);
+    transition: all 500ms ease;
+}
+
+.cards
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 500px;
+    font-family: "Kanit";
+}
+
+.cards h1{
+    font-size: 50px;
+    font-family: 'DM Serif Display';
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.cards p{
+    opacity: 40%;
+}
+.links{
+    position: relative
+}
+.links a::before{
+    content:'';
+    position: absolute;
+    left:-0.4rem;
+    top:15px;
+    background-color: yellow;
+    width: 125px;
+    height: 8px;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.cards2 a::before{
+    content:'';
+    position: absolute;
+    left:-0.4rem;
+    top:15px;
+    background-color: rgb(221, 133, 133);
+    width: 125px;
+    height: 8px;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.grid-new-1{
+    background-image: url("./images/image-graphic-design.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-new-2{
+    background-image: url("./images/image-photography.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards3{
+    position: relative;
+    top:10rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit';
+    width: 500px;
+    gap: 25px;
+    opacity: 60%;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.cards3 h1{
+    font-size: xx-large;
+    font-family: 'DM serif display';
+}
+
+.testinomial{
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 6rem;
+}
+
+.review1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+    width:300px;
+    margin-top: 2rem;
+}
+
+.heading{
+    margin-top: 6rem;
+}
+.heading>h1{
+    font-family: 'DM serif display';
+    letter-spacing: 5px;
+    opacity: 50%;
+}
+
+.img
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem;
+}
+
+.review1>p{
+    text-align: center;
+    font-family: 'Kanit';
+    opacity: 70%;
+    font-size: small;
+}
+.subscript{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    font-family: 'Kanit';
+    font-size:medium;
+    font-weight: bold;
+}
+.sup{
+    margin-top: -10px;
+    font-family: 'Kanit';
+    font-size: smaller;
+    font-weight: lighter;
+    opacity: 50%;
+}
+
+.bottom{
+    width: 100%
+}
+
+.btm-space{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.imgs{
+    
+    overflow: hidden;
+}
+
+.imgs>img{
+    width:100% ;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(149,212,198);
+    margin-top: -1rem;
+}
+
+.head{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Kanit';
+    color:rgba(40,113,96,255);
+}
+
+.links1>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.links1 a{
+    text-decoration: none;
+    color: rgba(40,113,96,255);
+    font-family: 'Kanit';
+    font-size:medium;
+    opacity: 70%;
+}
+
+.links2>i{
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
